@@ -27,7 +27,7 @@ The aim of the study is to identify a subset of patients affected by a BD-IPMN o
 In summary, first we will calculate the number of person-year that every patients has contributed to every age group. Afterwards, we will get the sum of the element wise multiplication between person-year and the crude rate of pancreatic cancer, which equals the number of expected cases. Finally we will calculate SIR and its 95% confidence interval.
 
 
-```{r Dataset read, echo=FALSE, message=FALSE, warning=FALSE}
+```{r Dataset read, echo=TRUE, message=FALSE, warning=FALSE}
 # The first thing that is needed is to read the dataset, and assigning it 
 # to the variable df. For the purpose of this markdown a randomly
 # generated dataset will be used
@@ -38,8 +38,12 @@ df <- tibble(
   DLAST = DSTART + runif(35, 100, 7500),
   Institution = rep(c("SGH", "B", "C", "D", "E"),400),
   ID = c(1:2000),
-  Sex = sample(c("M", "F"), size = 2000, replace = TRUE),
-  OBS = sample(c(0,1), size = 2000, replace = TRUE))
+  Sex = sample(c("MALE", "FEMALE"), size = 2000, replace = TRUE),
+  OBS = sample(c(0,1), size = 2000, replace = TRUE, prob = c(0.997, 0.003)))
+
+# With the prob argument of the OBS variable, with have set the rate of observation 
+# at 0.3% as an example, changing this number alter the final SIR significantly
+
 ```
 
 ```{r echo=FALSE}
