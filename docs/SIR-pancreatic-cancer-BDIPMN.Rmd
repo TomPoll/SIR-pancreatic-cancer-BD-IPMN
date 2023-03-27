@@ -3,8 +3,8 @@ title: "SIR-panc-cancer-BDIPMN"
 author: "Tommaso Pollini"
 date: "2023-03-24"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -28,7 +28,7 @@ In summary, first we will calculate the number of person-year that every patient
 
 
 ```{r Dataset read, echo=TRUE, message=FALSE, warning=FALSE}
-# The first thing that is needed is to read the dataset, and assigning it 
+# The first thing that we need is to read the dataset, and assigning it 
 # to the variable df. For the purpose of this markdown a randomly
 # generated dataset will be used
 

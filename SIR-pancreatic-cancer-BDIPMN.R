@@ -14,7 +14,7 @@ library(kableExtra)
 library(tidyverse)
 library(formatR)
 
-# The first thing that is needed is to read the dataset, and assigning it 
+# The first thing that we need is to read the dataset, and assigning it 
 # to the variable df. For the purpose of this markdown a randomly
 # generated dataset will be used
 
