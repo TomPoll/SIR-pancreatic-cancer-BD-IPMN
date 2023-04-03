@@ -1,6 +1,6 @@
 # IMPORTANT: for a fully commented version of this program
 # please check the "docs" folder on the TomPoll/SIR-pancreatic-cancer-BDIPMN
-# directory on GitHub. You will find a Markdown (.rmd) file and an rendered
+# directory on GitHub. You will find a Markdown (.rmd) file and a rendered
 # PDF (.pdf) file (RECOMMENDED)
 
 
