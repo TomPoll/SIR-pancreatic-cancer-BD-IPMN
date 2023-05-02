@@ -27,7 +27,7 @@ df <- tibble(
   Sex = sample(c("MALE", "FEMALE"), size = 2000, replace = TRUE),
   OBS = sample(c(0,1), size = 2000, replace = TRUE, prob = c(0.997, 0.003)))
 
-# With the prob argument of the OBS variable, with have set the rate of observation 
+# With the prob argument of the OBS variable, we have set the rate of observation 
 # at 0.3% as an example, changing this number alter the final SIR significantly
 
 # Crude rate (per 100.000) for male per age group
