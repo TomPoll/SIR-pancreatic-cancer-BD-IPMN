@@ -1,5 +1,5 @@
 # SIR-pancreatic-cancer-BDIPMN
-A method to calculate the number of expected cases and the standardized incidence ratio of pancreatic cancer in a cohort of patients under surveillance.
+A program to calculate the number of expected cases and the standardized incidence ratio of pancreatic cancer in a cohort of patients under surveillance.
 
 The attached R Markdown serves as a guide to replicate the methods used in the study "Surveillance for Presumed BD-IPMN of the Pancreas: Stability, Size, and Age Identify Targets for Discontinuation". 
 Please cite our study if you are planning on using this code.
