@@ -206,19 +206,19 @@ singapore_MaleEx <- bind_rows(sRaM, singapore_men_pry) %>%
 
 After we obtained the number of expected cases, we can calculate the SIR, defined as:
 
-\begin{align*}
-\displaystyle SIR=\frac{{\sum_{k = 1}^{M} D_{k}}}{\sum_{k = 1}^{M} t_{k}\lambda_{k}^{*}}
-\end{align*}
 
-where the total number of events observed in the cohort is $D=\sum_{k = 1}^{M} D_{k}$ and the total number of expected events is $E^*=\sum_{k = 1}^{M} E_{k}^*=\sum_{k = 1}^{M} t_{k}\lambda_{k}^{*}$
+$$SIR=\frac{\sum_{k = 1}^M D_k}{\sum_{k = 1}^M t_k\lambda_k^{*}}$$
+
+
+where the total number of events observed in the cohort is $`D=\sum_{k = 1}^{M} D_{k}`$ and the total number of expected events is $`E^*=\sum_{k = 1}^{M} E_{k}^*=\sum_{k = 1}^{M} t_{k}\lambda_{k}^{*}`$
 
 To approximate the 95% confidence interval (95%CI) we can use the Wilson and Hilferty approximation of the chi-square percentiles:
 
-\begin{align*}
-\chi_{v, a}=v\left(1-\frac{2}{9v}+Z_{\alpha}\sqrt{\frac{2}{9v}}\right)^3
-\end{align*}
 
-Therefore, the lower limit of the 95%CI is equal to $SIR_{L}=\frac{D}{{E}^*}\left(1-\frac{1}{9D}+\frac{Z_{\alpha/2}}{3\sqrt{D}}\right)^3$ with Z equal to -1.96 while the upper limit is equal to $SIR_{U}=\frac{D+1}{{E}^*}\left(1-\frac{1}{9(D+1)}+\frac{z_{1-\alpha/2}}{3\sqrt{D+1}}\right)^3$ with Z equal to 1.96
+$$\chi_{v, a}=v\left(1-\frac{2}{9v}+Z_{\alpha}\sqrt{\frac{2}{9v}}\right)^3$$
+
+
+Therefore, the lower limit of the 95%CI is equal to $`SIR_{L}=\frac{D}{{E}^*}\left(1-\frac{1}{9D}+\frac{Z_{\alpha/2}}{3\sqrt{D}}\right)^3`$ with Z equal to -1.96 while the upper limit is equal to $`SIR_{U}=\frac{D+1}{{E}^*}\left(1-\frac{1}{9(D+1)}+\frac{z_{1-\alpha/2}}{3\sqrt{D+1}}\right)^3`$ with Z equal to 1.96
 
 
 ```{r SIR}
