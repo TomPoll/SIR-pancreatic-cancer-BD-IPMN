@@ -1,3 +1,4 @@
+<!--
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 library(readr)
@@ -10,6 +11,7 @@ library(tidyverse)
 library(formatR)
 opts_chunk$set(tidy.opts=list(width.cutoff=60), tidy=TRUE)
 ```
+-->
 
 ## Introduction
 
