@@ -1,12 +1,3 @@
----
-title: "SIR-panc-cancer-BDIPMN"
-author: "Tommaso Pollini"
-date: "2023-03-24"
-output:
-  html_document: default
-  pdf_document: default
----
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 library(readr)
