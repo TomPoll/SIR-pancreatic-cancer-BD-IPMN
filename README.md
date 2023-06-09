@@ -205,10 +205,10 @@ singapore_MaleEx <- bind_rows(sRaM, singapore_men_pry) %>%
 After we obtained the number of expected cases, we can calculate the SIR, defined as:
 
 
-$$SIR=\frac{\sum_{k = 1}^M D_k}{\sum_{k = 1}^M t_k\lambda_k^{*}}$$
+$$SIR=\frac{\Sigma_{k = 1}^M D_k}{\Sigma_{k = 1}^M t_k\lambda_k^{*}}$$
 
 
-where the total number of events observed in the cohort is $`D=\sum_{k = 1}^{M} D_{k}`$ and the total number of expected events is $`E^*=\sum_{k = 1}^{M} E_{k}^*=\sum_{k = 1}^{M} t_{k}\lambda_{k}^{*}`$
+where the total number of events observed in the cohort is $`D=\Sigma_{k = 1}^{M} D_{k}`$ and the total number of expected events is $`E^*=\Sigma_{k = 1}^{M} E_{k}^*=\Sigma_{k = 1}^{M} t_{k}\lambda_{k}^{*}`$
 
 To approximate the 95% confidence interval (95%CI) we can use the Wilson and Hilferty approximation of the chi-square percentiles:
 
