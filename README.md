@@ -15,7 +15,7 @@ opts_chunk$set(tidy.opts=list(width.cutoff=60), tidy=TRUE)
 
 ## Introduction
 
-The aim of this program is to study is to calculate the Standardized Incidence Ratio (SIR) of pancreatic cancer between our study population (affected by IPMN) and the general population. To do that, first we will calculate the number of person-year that every patients has contributed to every age group (where age is divided in 5 year intervals from 0-4, 5-9, 10-14,... to 85+). Afterwards, we will get the sum of the element wise multiplication between person-year and the crude rate of pancreatic cancer, which equals the number of expected cases. Finally we will calculate SIR and its 95% confidence interval.
+The aim of this program is to calculate the Standardized Incidence Ratio (SIR) of pancreatic cancer between our study population (affected by IPMN) and the general population. To do that, first we will calculate the number of person-year that every patients has contributed to every age group (where age is divided in 5 year intervals from 0-4, 5-9, 10-14,... to 85+). Afterwards, we will get the sum of the element wise multiplication between person-year and the crude rate of pancreatic cancer, which equals the number of expected cases. Finally we will calculate SIR and its 95% confidence interval.
 
 
 ```{r Dataset read, echo=TRUE, message=FALSE, warning=FALSE}
